@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        * html, body{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            height: 100%;
+
+        }
+        body{
+            background-color: black;
+        }
+
+        .anim{
+            height: 40px;
+            width: 40px;
+            position: relative;
+            margin-top: 30%;margin-left: 50%;
+            background: blue;
+            border-radius: 100%;
+
+        }
+        .anim:hover{
+            background: green;
+            border-radius: 100%;
+            transition: 1.0s;
+        }
+        .f1{
+            border: 2px solid white;
+            position: absolute;
+            height: 36px;
+            width: 36px;
+            border-radius: 100%;
+            border-left-color: transparent;
+            border-right-color: transparent;
+            animation: f1 1.0s linear infinite;
+        }
+        @keyframes f1 {
+            0%{
+                transform: rotate(0deg);
+            }
+            100%{
+               transform: rotate(360deg);
+            }
+        }
+        .f2{
+            border: 2px solid white;
+            position: absolute;
+            height: 26px;
+            width: 26px;
+            border-radius: 100%;
+            border-top-color: transparent;
+            border-bottom-color: transparent;
+            top:5px;
+            left: 5px;
+            animation: f2 1.0s linear infinite;
+        }
+        @keyframes f2 {
+            0%{
+                transform: rotate(360deg);
+            }
+            100%{
+               transform: rotate(0deg);
+            }
+        }
+
+        .f3{
+            border: 2px solid white;
+            position: absolute;
+            height: 16px;
+            width: 16px;
+            border-radius: 100%;
+            border-top-color: transparent;
+            border-bottom-color: transparent;
+            top:10px;
+            left: 10px;
+            animation: f3 1.0s linear infinite;
+        }
+        @keyframes f3 {
+            0%{
+                transform: rotate(0deg);
+            }
+            100%{
+               transform: rotate(360deg);
+            }
+        }
+
+
+
+
+    </style>
+
+</head>
+<body>
+<div class="anim">
+
+    <div class="f1"></div>
+    <div class="f2"></div>
+    <div class="f3"></div>
+
+</div>
+
+</body>
+</html>
